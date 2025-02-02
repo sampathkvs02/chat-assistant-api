@@ -1,1 +1,1 @@
-# chat-assistant-api
+# Chat Assistant API - SQLite Integration & Deployed on Render
