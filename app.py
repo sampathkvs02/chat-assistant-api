@@ -62,6 +62,10 @@ def query_db(query, args=(), one=False):
     conn.close()
     return (result[0] if result else None) if one else result
 
+@app.route('/')
+def home():
+    return jsonify({"message": "Chat Assistant API is running!"}), 200
+
 @app.route('/chat', methods=['POST'])
 def chat():
     data = request.json
